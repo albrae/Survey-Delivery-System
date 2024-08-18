@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "2beac0b0-c221-45b0-a055-a753a1bd9a45",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18388770"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "albra",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"surveyUrl\": \"http://example.com/survey\",\r\n  \"domains\": [\r\n    {\r\n      \"domainName\": \"Domain 1\",\r\n      \"adminEmail\": \"albrae56@gmail.com\"\r\n    },\r\n    {\r\n      \"domainName\": \"Domain 2\",\r\n      \"adminEmail\": \"admin2@example.com\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/create-survey",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"create-survey"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
